@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link href="static/styles.css" rel="stylesheet">
+    <title>ADITYA RESTAURANT</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="{% url 'home' %}">ADITYA RESTAURANT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" aria-current="page" href="{% url 'aboutus' %}">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{% url 'ordernow' %}">Order Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="{% url 'contactus' %}">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search For Food</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <header class="hero bg-secondary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">WELCOME TO ADITYA RESTAURANT</h1>
+            <p class="lead">Enjoy the best dining experience with us!</p>
+        </div>
+    </header>
+
+    <!-- Food Section -->
+    <section class="food-menu py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Specialties</h2>
+            <div class="row">
+                <!-- Food Item 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="static/pizza.jpg" class="card-img-top" alt="Pizza">
+                        <div class="card-body">
+                            <h5 class="card-title">Delicious Pizza</h5>
+                            <p class="card-text">Our signature pizza with fresh ingredients and a perfect blend of spices.</p>
+                            <button class="btn btn-primary add-to-order" data-item="Delicious Pizza">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Food Item 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="static/burger.jpg" class="card-img-top" alt="Burger">
+                        <div class="card-body">
+                            <h5 class="card-title">Burger</h5>
+                            <p class="card-text">Our signature Burger with fresh ingredients and a perfect blend of spices.</p>
+                            <button class="btn btn-primary add-to-order" data-item="Burger">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Food Item 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="static/fries.jpg" class="card-img-top" alt="Fries">
+                        <div class="card-body">
+                            <h5 class="card-title">Fries</h5>
+                            <p class="card-text">Authentic Fries prepared with fresh ingredients.</p>
+                            <button class="btn btn-primary add-to-order" data-item="Fries">Add to Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-3">
+        <p>&copy; 2024 Aditya Restaurant. All rights reserved.</p>
+    </footer>
+
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

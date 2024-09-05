@@ -1,0 +1,31 @@
+/* Custom Styles */
+
+/* Hero Section */
+.hero {
+    background-image: url('https://example.com/hero-bg.jpg'); /* Add a background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: 3px solid #ff9800; /* Orange border for a pop of color */
+}
+
+.navbar-nav .nav-link {
+    margin-right: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
